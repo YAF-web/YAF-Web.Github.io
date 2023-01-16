@@ -1,0 +1,337 @@
+/* 首页专有样式 */
+/* 字体声明 */
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot?tomleg');
+    src: url('fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?tomleg') format('truetype'),
+        url('fonts/icomoon.woff?tomleg') format('woff'),
+        url('fonts/icomoon.svg?tomleg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+/* 版心 */
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* main主体部分开始 */
+.w .main {
+    margin-left: 220px;
+    margin-top: 10px;
+    width: 985px;
+    height: 455px;
+}
+
+/* 主体部分的focus焦点图部分 */
+.w .main .focus {
+    float: left;
+    width: 725px;
+    height: 100%;
+}
+
+/* 主体的newflash部分 */
+.w .main .newflash {
+    float: right;
+    width: 250px;
+    height: 100%;
+
+}
+
+/* 1号盒子news */
+.w .main .newflash .news {
+    height: 165px;
+    width: 100%;
+    border: 2px solid #e4e4e4;
+}
+
+/* news的news_hd */
+.w .main .newflash .news .news_hd {
+    height: 34px;
+    width: 100%;
+    border-bottom: 2px dotted #e4e4e4;
+    line-height: 34px;
+    padding: 0 15px;
+}
+
+.news_hd h3 {
+    float: left;
+}
+
+.news_hd a {
+    float: right;
+}
+
+.news_hd a::after {
+    font-family: 'icomoon';
+    content: '\e920';
+}
+
+/* news的news_bd */
+.news_bd ul {
+    padding-left: 15px;
+    margin-top: 10px;
+}
+
+.news_bd ul li {
+    height: 23px;
+    line-height: 23px;
+    /* 这个是为了当一行文字溢出的时候，变成省略号显示 */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* 2号盒子life_service */
+.newflash .life_service {
+    height: 209px;
+    border: 2px solid #e4e4e4;
+    border-top: none;
+}
+
+.newflash .life_service ul {
+    width: 100%;
+    height: 100%;
+}
+
+/* 给li百分比宽高会准确很多 */
+.newflash .life_service ul li {
+    float: left;
+    position: relative;
+    width: 25%;
+    height: 69.7px;
+    border-right: 2px solid #e4e4e4;
+    border-bottom: 2px solid #e4e4e4;
+    text-align: center;
+}
+
+.newflash .life_service ul li:nth-child(4n) {
+    border-right: none;
+}
+
+/* 将i变成行内块元素，可以指定宽高以及水平居中对齐 */
+.newflash .life_service ul li a i {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-top: 12px;
+    background: url(../images/icons.png) no-repeat center;
+}
+
+.newflash .life_service ul li:nth-child(1) a i {
+    background-position: -17px -15px;
+}
+
+.newflash .life_service ul li:nth-child(2) a i {
+    background-position: -80px -16px;
+}
+
+.newflash .life_service ul li:nth-child(2) em {
+    position: absolute;
+    right: 0;
+    top: -2px;
+}
+
+.newflash .life_service ul li:nth-child(3) a i {
+    background-position: -142px -16px;
+}
+
+.newflash .life_service ul li:nth-child(4) a i {
+    background-position: -205px -16px;
+}
+
+.newflash .life_service ul li:nth-child(5) a i {
+    background-position: -17px -89px;
+}
+
+.newflash .life_service ul li:nth-child(6) a i {
+    background-position: -80px -89px;
+}
+
+.newflash .life_service ul li:nth-child(7) a i {
+    background-position: -142px -89px;
+}
+
+.newflash .life_service ul li:nth-child(8) a i {
+    background-position: -205px -89px;
+}
+
+.newflash .life_service ul li:nth-child(9) a i {
+    background-position: -17px -159px;
+}
+
+.newflash .life_service ul li:nth-child(10) a i {
+    background-position: -79px -159px;
+}
+
+.newflash .life_service ul li:nth-child(11) a i {
+    background-position: -142px -155px;
+}
+
+.newflash .life_service ul li:nth-child(12) a i {
+    background-position: -206px -159px;
+}
+
+.newflash .life_service ul li a p {
+    margin-top: 6px;
+}
+
+/* 3号盒子 bargain */
+.newflash .bargain {
+    margin-top: 7px;
+}
+
+/* recom推荐部分 */
+.recom {
+    margin-top: 10px;
+    height: 165px;
+    background-color: bisque;
+}
+
+/* recom_hd盒子 */
+.recom .recom_hd {
+    float: left;
+    width: 205px;
+    height: 100%;
+    background-color: #5c5251;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.recom .recom_hd p {
+    color: #fff;
+    font-size: 18px;
+    margin-top: 6px;
+}
+
+/* recom_bd盒子 */
+.recom .recom_bd {
+    float: left;
+    width: calc(1200px - 205px);
+    height: 100%;
+    background-color: #ebebeb;
+}
+
+.recom .recom_bd ul li {
+    float: left;
+    height: 145px;
+    width: 25%;
+    margin: 10px 0;
+    background-color: aquamarine;
+    border-right: 1px solid #dddddd;
+    background: url(../upload/recom_hd_03.png) no-repeat center;
+}
+
+.recom .recom_bd ul li:last-child {
+    border-right: none;
+}
+
+.recom .recom_bd ul li:nth-child(1) {
+    background-position: 0 0;
+}
+
+.recom .recom_bd ul li:nth-child(2) {
+    background-position: -248px 0;
+}
+
+.recom .recom_bd ul li:nth-child(3) {
+    background-position: -496px 0;
+}
+
+.recom .recom_bd ul li:nth-child(4) {
+    background-position: -744px 0;
+}
+
+/* floor区域模块开始 */
+.floor .box_hd {
+    height: 40px;
+    border-bottom: 2px solid #c81623;
+    line-height: 40px;
+}
+
+.floor .w {
+    margin-top: 20px;
+}
+
+.floor .box_hd h2 {
+    float: left;
+    font-size: 18px;
+    color: #c81623;
+}
+
+.floor .box_hd .tab_list {
+    float: right;
+}
+
+.floor .box_hd .tab_list ul li {
+    float: left;
+}
+
+.floor .box_hd .tab_list ul li:nth-child(even) {
+    width: 1px;
+    height: 12px;
+    background-color: #999999;
+    margin: 15px 15px;
+}
+
+.floor .box_bd {
+    height: 360px;
+}
+
+.floor .box_bd .tab_content .tab_list_item>div {
+    float: left;
+}
+
+.floor .box_bd .tab_content .tab_list_item div:nth-child(1) {
+    width: 210px;
+    text-align: center;
+}
+
+.floor .box_bd .tab_content .tab_list_item div:nth-child(2) {
+    width: 329px;
+    position: relative;
+}
+
+.floor .box_bd .tab_content .tab_list_item div:nth-child(2) .circle {
+    height: 12px;
+    width: 60px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -20px;
+}
+
+.floor .box_bd .tab_content .tab_list_item div:nth-child(2) .circle ul li {
+    width: 12px;
+    height: 12px;
+    float: left;
+    border-radius: 50%;
+    background-color: #3e3e3e;
+    margin: 0 4px;
+}
+
+.floor .box_bd .tab_content .tab_list_item div:nth-child(2) .circle ul li:hover {
+    background-color: #fff;
+}
+
+.floor .box_bd .tab_content .tab_list_item div:nth-child(3),
+.floor .box_bd .tab_content .tab_list_item div:nth-child(4) {
+    width: 221px;
+}
+
+.floor .box_bd .tab_content .tab_list_item div:nth-child(5) {
+    width: 219px;
+}
+
+.floor .box_bd .tab_content .tab_list_item div:nth-child(1) ul li {
+    float: left;
+    margin-left: 15px;
+    width: 85px;
+    height: 34px;
+    border-bottom: 1px solid #ededed;
+    text-align: center;
+    line-height: 34px;
+}
