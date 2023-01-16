@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>品优购个人注册</title>
+    <!-- 引入ico网站图标 -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- 引入css初始化文件 -->
+    <link rel="stylesheet" href="css/base.css">
+    <!-- 引入css公共样式文件 -->
+    <!-- 由于底部公共样式不多，可以自己看着来写 -->
+    <link rel="stylesheet" href="css/common.css">
+    <!-- 引入css注册页register文件 -->
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+    <!-- 头部header开始 -->
+    <header class=" header w">
+        <!-- 注册区域不需要SEO优化，但是引入了样式懒得写了 -->
+        <!-- 实际开发中，注册区域不用优化 -->
+        <div class="logo">
+            <!-- 放h1是为了提高权重 -->
+            <h1>
+                <!-- 放a链接是为了点击logo方便返回首页 -->
+                <!-- 且链接里面要放文字，在网页中不要看到文字 -->
+                <!-- 在连接里面添加提示文本，鼠标移动到logo上就可以显示文本 -->
+                <a href="index.html" title="品优购商城" target="_self">品优购商城</a>
+            </h1>
+        </div>
+    </header>
+    <!-- 头部header结束 -->
+
+    <!-- 注册页面专有模块 -->
+    <!-- registerarea注册专区开始 -->
+    <div class="registerarea w">
+        <div class="reg_hd">
+            <h3>注册新用户</h3>
+            <div class="login">
+                我有账号，去<a href="#">登录</a>
+            </div>
+        </div>
+        <div class="reg_form">
+            <!-- 所有的表单域要通过表单form包含起来，用来给后台传递数据 -->
+            <form action="">
+                <ul>
+                    <li>
+                        <label for="tellphone">手机号：</label><input type="tel" name="phone" id="tellphone" class="inp">
+                        <span class="error"><i class="error_icon"></i> 手机号码格式不正确，请从新输入</span>
+                    </li>
+                    <li>
+                        <label for="message_num">短信验证码：</label><input type="text" name="message" id="message_num"
+                            maxlength="6" class="inp">
+
+                    </li>
+                    <li>
+                        <label for="password">登录密码：</label><input type="password" name="密码" id="password" class="inp">
+                        <span class="error"><i class="error_icon"></i> 密码不少于6位数，请从新输入</span>
+                    </li>
+                    <li class="safe">
+                        安全强度
+                        <em>弱</em>
+                        <em>中</em>
+                        <em>强</em>
+                    </li>
+                    <li>
+                        <label for="correct">确认密码：</label><input type="password" name="确认密码" id="correct" class="inp">
+                        <span class="error"><i class="error_icon"></i> 密码不一致，请从新输入</span>
+                    </li>
+                    <li class="agree">
+                        <input type="checkbox" checked="checked"> 同意协议并注册 <a href="#">《知果果用户协议》</a>
+                    </li>
+                    <li>
+                        <input type="submit" name="提交" value="完成注册" class="sub">
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+    <!-- registerarea注册专区结束 -->
+
+    <!-- footer底部开始 -->
+    <footer class="footer">
+        <div class="w">
+            <!-- 版权模块 -->
+            <div class="mod_copyright">
+                <div class="links">
+                    <a href="#">关于我们</a> | <a href="#">联系我们</a> | <a href="#">联系客服</a> | <a href="#">商家入驻</a> | <a
+                        href="#">营销中心</a> | <a href="#">手机品优购</a> | <a href="#">友情链接</a> |
+                    <a href="#">销售联盟</a> | <a href="#">品优购社区</a> | <a href="#">品优购公益</a> | <a href="#">English
+                        Site</a> | <a href="#">Contact U</a>
+                </div>
+                <div class="copyright">
+                    地址：北京市昌平区建材城西路金燕龙办公楼一层 邮编：100096 电话：400-618-4000 传真：010-82935100 邮箱: zhanghj+itcast.cn
+                    <br>
+                    京ICP备08001421号京公网安备110108007702
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- footer底部结束 -->
+</body>
+
+</html>
